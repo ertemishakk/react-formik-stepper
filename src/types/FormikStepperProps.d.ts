@@ -10,7 +10,6 @@ interface FormikStepperProps {
   validateOnChange?: boolean;
   validateOnBlur?: boolean;
   validateOnMount?: boolean;
-  isInitialValid?: boolean | ((props: Props) => boolean);
   enableReinitialize?: boolean;
   animate?: boolean;
 }

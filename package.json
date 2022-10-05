@@ -34,7 +34,12 @@
     "trailingComma": "es5"
   },
   "name": "react-formik-stepper",
-  "author": "Ishak Ertem",
+  "author": "Ishak Ertem <ertemishakk@gmail.com>",
+  "description": "A modern flexible step wizard component build for React Formik",
+  "homepage": "https://github.com/ertemishakk/react-formik-stepper",
+  "bugs": {
+    "url": "https://github.com/ertemishakk/react-formik-stepper"
+  },
   "module": "dist/react-formik-stepper.esm.js",
   "size-limit": [
     {

@@ -3,7 +3,7 @@ import { Formik } from 'formik';
 import * as yup from 'yup';
 import 'animate.css';
 
-export const FormikStepper = (props: FormikStepperProps) => {
+const FormikStepper = (props: FormikStepperProps) => {
   const { children, animate = true, ...rest } = props;
 
   const getSteps = () => React.Children.toArray(children);
@@ -120,6 +120,8 @@ export const FormikStepper = (props: FormikStepperProps) => {
     </Formik>
   );
 };
+
+export default FormikStepper;
 
 const Step = ({
   children,
