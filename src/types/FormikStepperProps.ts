@@ -1,12 +1,19 @@
-interface FormikStepperProps {
+import { FormikErrors, FormikHelpers, FormikValues } from 'formik';
+
+export interface FormikStepperProps {
   children: React.ReactElement[] | React.ReactElement;
   initialValues: FormikValues;
   onSubmit: (
     values: FormikValues,
     formikHelpers: FormikHelpers<FormikValues>
   ) => void | Promise<any>;
-  onReset?: (values: Values, formikHelpers: FormikHelpers<Values>) => void;
-  validate?: (values: Values) => void | object | Promise<FormikErrors<Values>>;
+  onReset?: (
+    values: FormikValues,
+    formikHelpers: FormikHelpers<FormikValues>
+  ) => void;
+  validate?: (
+    values: FormikValues
+  ) => void | object | Promise<FormikErrors<FormikValues>>;
   validateOnChange?: boolean;
   validateOnBlur?: boolean;
   validateOnMount?: boolean;

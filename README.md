@@ -1,5 +1,7 @@
 # React Formik Stepper
 
+![](images/react-formik-stepper.gif)
+
 [![npm](https://img.shields.io/npm/dm/react-formik-stepper.svg)](https://www.npmjs.com/package/react-formik-stepper)
 
 A flexible multistep wizard built for React and Formik

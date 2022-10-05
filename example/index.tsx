@@ -6,9 +6,8 @@ import FormikStepper from '../.';
 const App = () => {
   return (
     <div>
-      <FormikStepper>
-        <div>Step1</div>
-        <div>Step2</div>
+      <FormikStepper initialValues={{}} onSubmit={() => {}}>
+        <div>Step 1</div>
       </FormikStepper>
     </div>
   );

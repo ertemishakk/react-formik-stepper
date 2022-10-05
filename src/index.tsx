@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import 'animate.css';
+import { FormikStepperProps } from './types/FormikStepperProps';
+import { FormikTransitions } from './types/FormikTransitions';
 
 const FormikStepper = (props: FormikStepperProps) => {
   const { children, animate = true, ...rest } = props;
