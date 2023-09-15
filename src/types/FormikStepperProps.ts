@@ -11,6 +11,7 @@ export interface FormikStepperProps {
     values: FormikValues,
     formikHelpers: FormikHelpers<FormikValues>
   ) => void;
+  onStepChange?: (step: number) => void;
   validate?: (
     values: FormikValues
   ) => void | object | Promise<FormikErrors<FormikValues>>;

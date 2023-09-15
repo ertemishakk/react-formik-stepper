@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Formik } from 'formik';
 import * as yup from 'yup';
 import 'animate.css';
@@ -15,6 +15,12 @@ const FormikStepper = (props: FormikStepperProps) => {
   const [classes, setClasses] = useState<{
     [key: string]: string;
   }>({});
+
+  useEffect(() => {
+    if (props.onStepChange) {
+      props.onStepChange(step + 1);
+    }
+  }, [step]);
 
   let child = Array.isArray(children) ? children[step] : children;
   const childIndex = Array.isArray(children) ? step : 0;
